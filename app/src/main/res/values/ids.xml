@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et_nombre" type="id" />
+    <item name="et_apellido" type="id" />
+    <item name="et_rut" type="id" />
+    <item name="et_correo" type="id" />
+    <item name="et_celular" type="id" />
+    <item name="et_club_pesca" type="id" />
+    <item name="btn_enviar" type="id" />
+</resources>
