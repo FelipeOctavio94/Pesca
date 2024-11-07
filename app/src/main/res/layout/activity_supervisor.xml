@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="70dp">
+
+        <EditText
+            android:id="@+id/et_search_participant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar participante por correo" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <TextView
+            android:id="@+id/tv_participant_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información del participante"
+            android:visibility="gone" />
+
+        <!-- Contenedor para registros de tamaños de pescado -->
+        <LinearLayout
+            android:id="@+id/ll_fish_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/et_fish_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tamaño del pescado" />
+        <!-- Botón para agregar un nuevo registro de tamaño de pescado -->
+        <Button
+            android:id="@+id/btn_add_fish_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar tamaño de pescado" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_upload_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subir Foto" />
+
+        <!-- Botón para guardar todos los registros -->
+        <Button
+            android:id="@+id/btn_save_records"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Registros" />
+    </LinearLayout>
+</FrameLayout>
+

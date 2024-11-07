@@ -77,5 +77,7 @@ dependencies {
     implementation("androidx.room:room-runtime:$roomVersion")
     kapt("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
-
+    implementation ("androidx.sqlite:sqlite:2.1.0")
+    implementation ("androidx.room:room-runtime:2.5.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
 }

@@ -5,4 +5,8 @@
     <string name="title_activity_password">PasswordActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_participant">ParticipantActivity</string>
+    <string name="title_activity_supervisor">SupervisorActivity</string>
 </resources>

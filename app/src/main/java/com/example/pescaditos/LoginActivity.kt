@@ -41,12 +41,25 @@ class LoginActivity : AppCompatActivity() {
                 runOnUiThread {
                     if (user != null) {
                         // Inicio de sesión exitoso
-                        Toast.makeText(this@LoginActivity, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                        // Redirige al usuario a la pantalla principal de la aplicación
-                        startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
+                        when (user.role) {
+                            "admin" -> {
+                                Toast.makeText(this@LoginActivity, "Inicio de sesión como Administrador", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this@LoginActivity, AdminActivity::class.java))
+                            }
+                            "Supervisor" -> {
+                                Toast.makeText(this@LoginActivity, "Inicio de sesión como Supervisor", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this@LoginActivity, SupervisorActivity::class.java))
+                            }
+                            "Participante" -> {
+                                Toast.makeText(this@LoginActivity, "Inicio de sesión como Participante", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this@LoginActivity, ParticipantActivity::class.java))
+                            }
+                            else -> {
+                                Toast.makeText(this@LoginActivity, "Rol no reconocido", Toast.LENGTH_SHORT).show()
+                            }
+                        }
                         finish()
                     } else {
-                        // Credenciales incorrectas
                         Toast.makeText(this@LoginActivity, "Correo o contraseña incorrectos", Toast.LENGTH_SHORT).show()
                     }
                 }

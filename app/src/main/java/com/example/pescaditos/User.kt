@@ -12,6 +12,7 @@ data class User(
     val correo: String,
     val celular: String,
     val clubPesca: String,
-    val contrasena: String
+    val contrasena: String,
+    var role: String? = null
 )
 
